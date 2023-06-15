@@ -1,8 +1,10 @@
 function calcular(){
-    let cosasACalcular = document.getElementById("resultado").value;
-    let resultado = eval(cosasACalcular) == undefined || eval(cosasACalcular) == null ? "ERROR" : eval(cosasACalcular);
-    document.getElementById("resultado").value = resultado;
-    botonesIngresados = ["N"];
+    if(botonesIngresados[botonesIngresados.length-1] != "O"){
+        let cosasACalcular = document.getElementById("resultado").value;
+        let resultado = eval(cosasACalcular) == undefined || eval(cosasACalcular) == null ? "ERROR" : eval(cosasACalcular);
+        document.getElementById("resultado").value = resultado;
+        botonesIngresados = ["N"];
+    }
 }
 
 let botonesIngresados = ["O"];
